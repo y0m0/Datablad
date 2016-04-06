@@ -4,7 +4,7 @@
 # yattag.py
 #
 import codecs
-from lxml import etree, objectify
+from lxml import objectify
 from yattag import Doc, indent
 
 
@@ -13,13 +13,13 @@ def get_products(file_path):
     root = tree.getroot()
     products = {}
     for x in root.findall('g_otemp'):
-        id = x.prodid.text
-        products[id] = x
+        prodcode = x.prodid.text
+        products[prodcode] = x
     return products
 
 
 def make_html(prod_dict):
-    for id, prod in prod_dict.items():
+    for prodcode, prod in prod_dict.items():
 
         doc, tag, text = Doc().tagtext()
 
@@ -28,8 +28,9 @@ def make_html(prod_dict):
             with tag('head'):
                 doc.asis('<meta charset="UTF-8" />')
                 doc.asis('<link rel="stylesheet" type="text/css" href="style.css">')
+                doc.asis('<meta name="viewport" content="width=device-width">')
                 with tag('title'):
-                	text(prod.prodid.text)
+                    text(prod.prodid.text)
             with tag('body', klass='main'):
                 with tag('p', klass='prodid'):
                     text('prodid: ' + prod.prodid.text)
@@ -40,14 +41,14 @@ def make_html(prod_dict):
                 with tag('h2', klass='ingredienser'):
                     text('Ingredienser')
                 with tag('p', klass='ingredienser'):
-                    if hasattr(prod, 'prodnote') == True:
+                    if hasattr(prod, 'prodnote'):
                         text(prod.prodnote.text)
                     else:
                         text('no data yet')
                 with tag('h2', klass='energy'):
                     text('Næringsinneholder for 100g')
                 with tag('p', klass='energy'):
-                    if hasattr(prod, 'technote') == True:
+                    if hasattr(prod, 'technote'):
                         text(prod.technote.text)
                     else:
                         text('no data yet')
@@ -60,7 +61,7 @@ def make_html(prod_dict):
                 with tag('p', klass='shelf'):
                     text('shelf-life, temp')
 
-        with codecs.open(id + '.html', 'w', 'utf-8') as file:
+        with codecs.open(prodcode + '.html', 'w', 'utf-8') as file:
             file.write(indent(doc.getvalue()))
 
 

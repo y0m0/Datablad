@@ -1,4 +1,151 @@
- h1 {
- 	text-align: left;
- 	color: blue;
+
+body {
+	max-width: 960px;
+	margin: auto;
+	font: 1em/1.5 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+h1 {
+ 	color: rgb(18, 8, 162);
  }
+
+h2 {
+	font-size: 1.2em;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul, li {	
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Main Styles ----------------- */
+
+.main-header {
+	height: 200px;
+}
+
+.logo {
+	display: block;
+	margin: auto;
+	width: 180px;
+	height: auto;
+	max-width: 100%;
+}
+
+.prodname {
+	text-align: center;
+	font-size: 1.6em;
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+}
+
+.content {
+	max-width: 95%;
+	margin: auto;
+	padding: 15px;
+	background-color: rgb(247, 245, 242);
+}
+
+.primary-content {
+	padding-bottom: 25px;
+}
+
+.secondary-content {
+	padding-top: 25px;
+}
+
+.product-details h2,
+.energy h2,
+.allergens h2 {
+	margin-top: 0;
+}
+
+.basic-info, .ingredients {
+	padding-left: 5px;
+}
+
+.ingredients {
+	margin-top: 20px;
+}
+
+.field{
+	background-color: #fff;	
+}
+
+
+.energy li:nth-child(odd),
+.allergens li:nth-child(odd) {
+	background-color: rgb(220, 220, 220);	
+}
+
+.allergens {
+	display: ;
+}
+
+
+
+
+
+
+
+.main-footer {
+	margin-top: 15px;
+	text-align: center;
+	border-top: 2px solid black;
+}
+
+
+
+
+
+/* Layout Styles ---------------- */
+
+.product-picture,
+.product-details,
+.energy,
+.allergens {
+	max-width: 60%;
+}
+
+.product-picture,
+.energy {
+	float: left;
+}
+
+.product-details,
+.allergens {
+	float: right;
+}
+
+.storage {
+	padding: 10px;
+	clear: both;
+	text-align: center;
+}
+
+
+/* Pseudo-classes --------------- */
+
+a:link {
+	text-decoration: none;
+  	color: rgb(255, 169, 73);
+}
+
+a:hover {
+	color: red;
+}
+
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
