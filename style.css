@@ -17,7 +17,7 @@ img {
 	max-width: 100%;
 }
 
-ul, li {	
+ul, li {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -75,13 +75,14 @@ ul, li {
 }
 
 .field{
-	background-color: #fff;	
+	background-color: #fff;
 }
 
 
 .energy li:nth-child(odd),
-.allergens li:nth-child(odd) {
-	background-color: rgb(220, 220, 220);	
+.allergens li:nth-child(odd),
+.storage li:nth-child(odd) {
+	background-color: rgb(220, 220, 220);
 }
 
 .allergens {

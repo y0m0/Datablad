@@ -3,6 +3,7 @@
 #
 # yattag.py
 #
+import re
 import codecs
 from lxml import objectify
 from yattag import Doc, indent
@@ -58,7 +59,7 @@ def make_html(prod_dict):
                                     with tag('li'):
                                         text('Produktgruppe: ' + prod.prodgroupex.text)
                                     with tag('li'):
-                                        text('Pakning: ' + prod.weight.text + prod.weightunit.text)
+                                        text('Pakning: ' + re.sub('.000', '', prod.weight.text) + ' ' + prod.weightunit.text)
 
                             with tag('div', klass='ingredients'):
                                 with tag('h2'):
@@ -76,38 +77,28 @@ def make_html(prod_dict):
                         with tag('div', klass='energy'):
                             with tag('h2'):
                                 text('Næringsinnehold Pr. 100 gram.')
-                            with tag('ul', klass='field'):
+                            with tag('ul'):
                                 with tag('li'):
-                                    text('Energi(kcal/kj) 437/1931')
-                                with tag('li'):
-                                    text('Fett 45g')
-                                with tag('li'):
-                                    text('hvorav Mettet Fett 5,4g')
-                                with tag('li'):
-                                    text('Karbohydrat 4,2g')
-                                with tag('li'):
-                                    text('hvorav Sukker 1,5g')
-                                with tag('li'):
-                                    text('Protein 4,4g')
-                                with tag('li'):
-                                    text('Salt 2,2g')
-                                with tag('li'):
-                                    text('Kostfiber 0,7g')
+                                    text((re.findall(r'.+\d\/\d*', prod.technote.text)[0])
+                                for value in re.split('',prod.technote.text)
+)
 
                         with tag('div', klass='allergens'):
                             with tag('h2'):
                                 text('Allergener')
                             with tag('ul', klass='field'):
-                                for i in range(4):
-                                    with tag('li'):
-                                        text('....')
+                                for word in set(re.split('[\[\]/{}.,() ]+', prod.prodnote.text)):
+                                    if word.isupper():
+                                        with tag('li'):
+                                            text(word)
 
                         with tag('div', klass='storage'):
                             with tag('h2'):
                                 text('Oppbevaring')
                             with tag('ul', klass='field'):
-                                with tag('li'):
-                                    text('....')
+                                for word in re.findall(r'[A-Z][^A-Z]*', prod.annenote.text):
+                                    with tag('li'):
+                                        text(word)
 
                 with tag('footer', klass='main-footer'):
                     with tag('p'):
