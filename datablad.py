@@ -40,16 +40,13 @@ def make_html(prod_dict):
                     with tag('h1', klass='prodname'):
                         text(prod.desc.text)
 
-
                 with tag('div', klass='content'):
                     with tag('div', klass='primary-content group'):
 
-                        with tag ('div', klass='product-picture'):
+                        with tag('div', klass='product-picture'):
                             doc.stag('img', src='102029.jpg', alt='Product Picture')
 
-
                         with tag('div', klass='product-details'):
-
                             with tag('div', klass='basic-info'):
                                 with tag('h2'):
                                     text('Produktinformasjon')
@@ -59,7 +56,8 @@ def make_html(prod_dict):
                                     with tag('li'):
                                         text('Produktgruppe: ' + prod.prodgroupex.text)
                                     with tag('li'):
-                                        text('Pakning: ' + re.sub('.000', '', prod.weight.text) + ' ' + prod.weightunit.text)
+                                        text('Pakning: ' + re.sub('.000', '',
+                                                                  prod.weight.text) + ' ' + prod.weightunit.text)
 
                             with tag('div', klass='ingredients'):
                                 with tag('h2'):
@@ -71,17 +69,15 @@ def make_html(prod_dict):
                                     #     text('no data yet')
                                     text(prod.prodnote.text)
 
-
                     with tag('div', klass='secondary-content'):
-
                         with tag('div', klass='energy'):
                             with tag('h2'):
                                 text('Næringsinnehold Pr. 100 gram.')
                             with tag('ul'):
-                                with tag('li'):
-                                    text((re.findall(r'.+\d\/\d*', prod.technote.text)[0])
-                                for value in re.split('',prod.technote.text)
-)
+                                for value in re.split('\n', prod.technote.text):
+                                ##for value in prod.technote.text.split('\n'):
+	                                with tag('li'):
+	                                    text(value)
 
                         with tag('div', klass='allergens'):
                             with tag('h2'):
@@ -102,7 +98,10 @@ def make_html(prod_dict):
 
                 with tag('footer', klass='main-footer'):
                     with tag('p'):
-                        doc.asis('<a href="www.villaimport.no">www.villaimport.no</a> &#9702; <a href="tel:+4723229999">+47 23229999</a> &#9702; <a href="mailto:mail@villaimport.no">mail@villaimport.no</a>')
+                        doc.asis(
+                            '''<a href="www.villaimport.no">www.villaimport.no</a> &#9702;
+                            <a href="tel:+4723229999">+47 23229999</a> &#9702;
+                            <a href="mailto:mail@villaimport.no">mail@villaimport.no</a>''')
                     with tag('p'):
                         doc.asis('&copy; Villa Import AS - 2016')
 

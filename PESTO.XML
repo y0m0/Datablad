@@ -37,10 +37,26 @@
         <minstock>.000</minstock>
         <ordercount>.000</ordercount>
         <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og lyst kjøtt.</note>
-        <technote>Energi (kcal/kj) 437/1931 Fett 45g hvorav Mettet Fett 5.4g Karbohydrat 4.2g hvorav Sukker 1.5g Protein 4.4g Salt 2.2g Kostfiber 0.7g</technote>
-        <prodnote>solsikkeolje 40%, basilikum 25%, vann, revet ost 5% (MELK, inneholder lysozym fra EGG), CASHEWNØTTER 3.3%, potetflak, salt, sukker, extra virgin olivenolje 0.5%, hvitløk 0.1%, vegetabilske fiber, pinjekjerner, surhetsregulerende middel: melkesyre.</prodnote>
-        <annenote>Temperatur, min. romtemperatur Temperatur, max. romtemperatur Holdbarhet, total 3 år</annenote>
+        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
+            lyst kjøtt.
+        </note>
+        <technote>Energi (kcal/kj) 437/1931
+            Fett 45g
+            hvorav Mettet Fett 5.4g
+            Karbohydrat 4.2g
+            hvorav Sukker 1.5g
+            Protein 4.4g
+            Salt 2.2g
+            Kostfiber 0.7g
+        </technote>
+        <prodnote>solsikkeolje 40%, basilikum 25%, vann, revet ost 5% (MELK, inneholder lysozym fra EGG), CASHEWNØTTER
+            3.3%, potetflak, salt, sukker, extra virgin olivenolje 0.5%, hvitløk 0.1%, vegetabilske fiber, pinjekjerner,
+            surhetsregulerende middel: melkesyre.
+        </prodnote>
+        <annenote>Temperatur, min. romtemperatur
+            Temperatur, max. romtemperatur
+            Holdbarhet, total 3 år
+        </annenote>
         <lblprodnr>Produktnr.</lblprodnr>
         <lblnavn>Navn</lblnavn>
         <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
@@ -115,10 +131,25 @@
         <minstock>.000</minstock>
         <ordercount>.000</ordercount>
         <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og lyst kjøtt. Dette er en rød pesto med tomat.</note>
-        <technote>Energi (kcal/kj) 388/1625 Fett 37.8g hvorav Mettet Fett 4.7g Karbohydrat 6.6g hvorav Sukker 4.4g Protein 4.4g Salt 2.2g</technote>
-        <prodnote>Tomatpure 33.5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16.5% (søltorkede tomat, vann, vineddik(SULFITT), salt, antioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum, CASHEWNØTTER, revet ost 3.5% (MELK, inneholder lysozym fra EGG), salt, pecorino ost 1%(MELK), melkesyre.</prodnote>
-        <annenote>Temperatur, min. romtemperatur Temperatur, max. romtemperatur Holdbarhet, total 3 år</annenote>
+        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
+            lyst kjøtt. Dette er en rød pesto med tomat.
+        </note>
+        <technote>Energi (kcal/kj) 388/1625
+            Fett 37.8g
+            hvorav Mettet Fett 4.7g
+            Karbohydrat 6.6g
+            hvorav Sukker 4.4g
+            Protein 4.4g
+            Salt 2.2g
+        </technote>
+        <prodnote>Tomatpure 33.5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16.5% (søltorkede tomat, vann,
+            vineddik(SULFITT), salt, antioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum,
+            CASHEWNØTTER, revet ost 3.5% (MELK, inneholder lysozym fra EGG), salt, pecorino ost 1%(MELK), melkesyre.
+        </prodnote>
+        <annenote>Temperatur, min. romtemperatur
+            Temperatur, max. romtemperatur
+            Holdbarhet, total 3 år
+        </annenote>
         <lblprodnr>Produktnr.</lblprodnr>
         <lblnavn>Navn</lblnavn>
         <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
@@ -193,10 +224,26 @@
         <minstock>.000</minstock>
         <ordercount>.000</ordercount>
         <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og lyst kjøtt. Dette er en pesto laget på artisjokk.</note>
-        <technote>Energi (kcal/kj) 326/1336 Fett 32.7g hvorav Mettet Fett 3.5g Karbohydrat 3.9g hvorav Sukker 0.8g Protein 2.9g Salt 2g Kostfiber 2.6g</technote>
-        <prodnote>Artisjokker 59%, solsikkeolje, extra virgin olivenolje 3%, VALNØTTER, basilikum, salt, revet OST 0,6% (inneholder lysozym fra EGG), dekstrose, hvitløk, surhetsregulerende: sitronsyre, antioksidant: askorbinsyre.</prodnote>
-        <annenote>Temperatur, min. romtemperatur Temperatur, max. romtemperatur Holdbarhet, total 3 år</annenote>
+        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
+            lyst kjøtt. Dette er en pesto laget på artisjokk.
+        </note>
+        <technote>Energi (kcal/kj) 326/1336
+            Fett 32.7g
+            hvorav Mettet Fett 3.5g
+            Karbohydrat 3.9g
+            hvorav Sukker 0.8g
+            Protein 2.9g
+            Salt 2g
+            Kostfiber 2.6g
+        </technote>
+        <prodnote>Artisjokker 59%, solsikkeolje, extra virgin olivenolje 3%, VALNØTTER, basilikum, salt, revet OST 0,6%
+            (inneholder lysozym fra EGG), dekstrose, hvitløk, surhetsregulerende: sitronsyre, antioksidant:
+            askorbinsyre.
+        </prodnote>
+        <annenote>Temperatur, min. romtemperatur
+            Temperatur, max. romtemperatur
+            Holdbarhet, total 3 år
+        </annenote>
         <lblprodnr>Produktnr.</lblprodnr>
         <lblnavn>Navn</lblnavn>
         <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
@@ -271,10 +318,25 @@
         <minstock>.000</minstock>
         <ordercount>.000</ordercount>
         <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og lyst kjøtt. Dette er en rød pesto med tomat.</note>
-        <technote>Energi (kcal/kj) 388/1625 Fett 37,8g hvorav Mettet Fett 4,7g Karbohydrat 6,6g hvorav Sukker 4,4g Protein 4,4g Salt 2,2g</technote>
-        <prodnote>Tomatpure 33,5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16,5% (søltorkede tomat, vann, VINEDDIK, salt, atioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum, CASHEWNØTTER, revet OST 3,5% (inneholder lysozym fra EGG), salt, pecorino OST 1%, melkesyre.</prodnote>
-        <annenote>Temperatur, min. romtemperatur Temperatur, max. romtemperatur Holdbarhet, total 3 år</annenote>
+        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
+            lyst kjøtt. Dette er en rød pesto med tomat.
+        </note>
+        <technote>Energi (kcal/kj) 388/1625
+            Fett 37,8g
+            hvorav Mettet Fett 4,7g
+            Karbohydrat 6,6g
+            hvorav Sukker 4,4g
+            Protein 4,4g
+            Salt 2,2g
+        </technote>
+        <prodnote>Tomatpure 33,5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16,5% (søltorkede tomat, vann,
+            VINEDDIK, salt, atioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum, CASHEWNØTTER, revet
+            OST 3,5% (inneholder lysozym fra EGG), salt, pecorino OST 1%, melkesyre.
+        </prodnote>
+        <annenote>Temperatur, min. romtemperatur
+            Temperatur, max. romtemperatur
+            Holdbarhet, total 3 år
+        </annenote>
         <lblprodnr>Produktnr.</lblprodnr>
         <lblnavn>Navn</lblnavn>
         <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
