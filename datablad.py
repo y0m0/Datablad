@@ -44,7 +44,7 @@ def make_html(prod_dict):
                     with tag('div', klass='primary-content group'):
 
                         with tag('div', klass='product-picture'):
-                            doc.stag('img', src='102029.jpg', alt='Product Picture')
+                            doc.stag('img', src='http://www.villaimport.no/images/produktbilder/Full%20Size/'+ prod.prodid.text + '.jpg', alt=prod.desc.text)
 
                         with tag('div', klass='product-details'):
                             with tag('div', klass='basic-info'):
@@ -63,21 +63,17 @@ def make_html(prod_dict):
                                 with tag('h2'):
                                     text('Ingredienser')
                                 with tag('p', klass='field'):
-                                    # if hasattr(prod, 'prodnote'):
-                                    #     text(prod.prodnote.text)
-                                    # else:
-                                    #     text('no data yet')
                                     text(prod.prodnote.text)
 
                     with tag('div', klass='secondary-content'):
                         with tag('div', klass='energy'):
                             with tag('h2'):
                                 text('Næringsinnehold Pr. 100 gram.')
-                            with tag('ul'):
+                            with tag('ul', klass='field'):
                                 for value in re.split('\n', prod.technote.text):
-                                ##for value in prod.technote.text.split('\n'):
-	                                with tag('li'):
-	                                    text(value)
+                                    with tag('li'):
+                                        if value.lstrip() != "":
+                                            text(value.lstrip())
 
                         with tag('div', klass='allergens'):
                             with tag('h2'):
@@ -86,7 +82,7 @@ def make_html(prod_dict):
                                 for word in set(re.split('[\[\]/{}.,() ]+', prod.prodnote.text)):
                                     if word.isupper():
                                         with tag('li'):
-                                            text(word)
+                                            text(word.capitalize())
 
                         with tag('div', klass='storage'):
                             with tag('h2'):

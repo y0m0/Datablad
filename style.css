@@ -6,11 +6,15 @@ body {
 }
 
 h1 {
- 	color: rgb(18, 8, 162);
+ 	color: #1208a2;
  }
 
 h2 {
 	font-size: 1.2em;
+}
+
+p {
+	margin: 0;
 }
 
 img {
@@ -23,8 +27,17 @@ ul, li {
 	margin: 0;
 }
 
+li {
+	padding-left: 5px;
+}
 
 /* Main Styles ----------------- */
+
+.field {
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	border-radius: 0 0 6px 6px;
+}
 
 .main-header {
 	height: 200px;
@@ -40,30 +53,43 @@ ul, li {
 
 .prodname {
 	text-align: center;
+	border-bottom: 2px solid #000000;
 	font-size: 1.6em;
 	padding-bottom: 10px;
-	border-bottom: 2px solid black;
 }
 
 .content {
 	max-width: 95%;
-	margin: auto;
-	padding: 15px;
-	background-color: rgb(247, 245, 242);
+	background-color: ;
+	padding: 10px;
+	margin: 0 auto;
 }
 
 .primary-content {
-	padding-bottom: 25px;
+	padding-bottom: 30px;
 }
 
-.secondary-content {
-	padding-top: 25px;
+.allergens,
+.energy {
+	padding-bottom: 30px;
+}
+
+.storage {
+	padding-bottom: 10px;
+}
+
+.product-picture img {
+	width: 300px;
 }
 
 .product-details h2,
 .energy h2,
-.allergens h2 {
-	margin-top: 0;
+.allergens h2,
+.storage h2 {
+	background: #13D2F1;
+	border-radius: 6px 6px 0 0;
+	padding-left: 5px;
+	margin: 0;
 }
 
 .basic-info, .ingredients {
@@ -74,36 +100,39 @@ ul, li {
 	margin-top: 20px;
 }
 
+.ingredients p {
+	padding-left: 0.312em;
+}
+
 .field{
 	background-color: #fff;
+	border: 1px solid #13D2F1;
 }
 
-
-.energy li:nth-child(odd),
-.allergens li:nth-child(odd),
-.storage li:nth-child(odd) {
-	background-color: rgb(220, 220, 220);
+li:first-child {
+	-moz-border-radius: 6px 6px 0 0;
 }
 
-.allergens {
-	display: ;
+li:last-child {
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px ;
+	border-radius: 0 0 6px 6px;
 }
 
-
-
-
-
-
+.energy li:nth-child(even),
+.allergens li:nth-child(even),
+.storage li:nth-child(even) {
+	background-color: #CECECE;
+}
 
 .main-footer {
-	margin-top: 15px;
 	text-align: center;
-	border-top: 2px solid black;
+	border-top: 2px solid #000000;
 }
 
-
-
-
+.main-footer p {
+	padding-top: 10px;
+}
 
 /* Layout Styles ---------------- */
 
@@ -124,24 +153,28 @@ ul, li {
 	float: right;
 }
 
+.allergens,
+.energy {
+	min-width: 35%;
+}
+
 .storage {
-	padding: 10px;
+	margin: 0 auto;
+	max-width: 50%;
 	clear: both;
 	text-align: center;
 }
-
 
 /* Pseudo-classes --------------- */
 
 a:link {
 	text-decoration: none;
-  	color: rgb(255, 169, 73);
+  	color: #13D2F1;
 }
 
 a:hover {
-	color: red;
+	color: #ff6347;
 }
-
 
 /* Float Clearfix ------------------ */
 
@@ -149,4 +182,29 @@ a:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (max-width: 800px) {
+	.primary-content {
+	padding-bottom: 10px;
+	}
+
+	.secondary-content div {
+		padding-bottom: 40px;
+	}
+
+	.product-picture,
+	.product-details,
+	.energy,
+	.allergens {
+		max-width: 100%;
+		float: none;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.content {
+		margin-top: 30px;
+	}
 }
