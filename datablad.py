@@ -67,13 +67,31 @@ def make_html(prod_dict):
 
                     with tag('div', klass='secondary-content'):
                         with tag('div', klass='energy'):
-                            with tag('h2'):
-                                text('Næringsinnehold Pr. 100 gram.')
-                            with tag('ul', klass='field'):
-                                for value in re.split('\n', prod.technote.text):
-                                    if value.lstrip() != "":
-                                        with tag('li'):
-                                            text(value.lstrip())
+                            with tag('table'):
+                                with tag('thead'):
+                                    with tag('tr'):
+                                        with tag('th', colspan='2'):
+                                            text('Næringsinnehold Pr. 100 gram.')
+                                with tag('tbody'):
+                                    for lines in re.split('\n', prod.technote.text):
+                                        line = lines.lstrip()
+                                        if line != "":
+                                            print(line)
+                                            with tag('tr'):
+                                                value = re.split(r'[^0-9\.]*', line)
+                                                print(value)
+                                                with tag('td'):
+                                                    text(value[1])
+                                                with tag('td', klass='amount'):
+                                                    text(value[2])
+
+                            # with tag('h2'):
+                            #     text('Næringsinnehold Pr. 100 gram.')
+                            # with tag('ul', klass='field'):
+                            #     for value in re.split('\n', prod.technote.text):
+                            #         if value.lstrip() != "":
+                            #             with tag('li'):
+                            #                 text(value.lstrip())
 
                         with tag('div', klass='allergens'):
                             with tag('h2'):
