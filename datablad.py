@@ -71,8 +71,8 @@ def make_html(prod_dict):
                                 text('Næringsinnehold Pr. 100 gram.')
                             with tag('ul', klass='field'):
                                 for value in re.split('\n', prod.technote.text):
-                                    with tag('li'):
-                                        if value.lstrip() != "":
+                                    if value.lstrip() != "":
+                                        with tag('li'):
                                             text(value.lstrip())
 
                         with tag('div', klass='allergens'):
@@ -105,5 +105,5 @@ def make_html(prod_dict):
             file.write(indent(doc.getvalue()))
 
 
-xmlfile = "PESTO.XML"
+xmlfile = input('Select a Catalog File: ');
 make_html(get_products(xmlfile))
