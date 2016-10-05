@@ -78,27 +78,19 @@ def make_html(prod_dict):
                                         if line != "":
                                             print(line)
                                             with tag('tr'):
-                                                value = re.split(r'[^0-9\.]*', line)
+                                                value = re.split('    ', line)
                                                 print(value)
                                                 with tag('td'):
-                                                    text(value[1])
+                                                    text(value[0])
                                                 with tag('td', klass='amount'):
-                                                    text(value[2])
-
-                            # with tag('h2'):
-                            #     text('Næringsinnehold Pr. 100 gram.')
-                            # with tag('ul', klass='field'):
-                            #     for value in re.split('\n', prod.technote.text):
-                            #         if value.lstrip() != "":
-                            #             with tag('li'):
-                            #                 text(value.lstrip())
+                                                    text(value[1])
 
                         with tag('div', klass='allergens'):
                             with tag('h2'):
                                 text('Allergener')
                             with tag('ul', klass='field'):
                                 for word in set(re.split('[\[\]/{}.,() ]+', prod.prodnote.text)):
-                                    if word.isupper():
+                                    if word.isupper() and word.isalpha():
                                         with tag('li'):
                                             text(word.capitalize())
 
@@ -106,7 +98,7 @@ def make_html(prod_dict):
                             with tag('h2'):
                                 text('Oppbevaring')
                             with tag('ul', klass='field'):
-                                for word in re.findall(r'[A-Z][^A-Z]*', prod.annenote.text):
+                                for word in re.split('\n', prod.annenote.text):
                                     with tag('li'):
                                         text(word)
 

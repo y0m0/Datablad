@@ -1,377 +1,71 @@
-<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?>
-<VFPData>
-    <g_otemp>
-        <prodid>102029</prodid>
-        <desc>Pesto Genovese 180 g (Davenia)</desc>
-        <unit>Glass</unit>
-        <quantity>1.000</quantity>
-        <weight>180.000</weight>
-        <weightunit>gram</weightunit>
-        <volume>.000</volume>
-        <volumeunit>m3</volumeunit>
-        <delitime>0</delitime>
-        <cvat>15.00</cvat>
-        <prodtype>MAT</prodtype>
-        <prodgroup>DIVERSE MAT</prodgroup>
-        <prodgroupex>Pesto</prodgroupex>
-        <inactive>false</inactive>
-        <component>false</component>
-        <deltime/>
-        <cdata12>(Ingen)</cdata12>
-        <vendid>10272</vendid>
-        <vendname>DAVENIA Alimentar Commercial srl</vendname>
-        <vendcode>SUG15034</vendcode>
-        <prod_pricein>7.8400</prod_pricein>
-        <prod_cost>3.0100</prod_cost>
-        <prod_pricecost>10.8500</prod_pricecost>
-        <prod_profit>9.1500</prod_profit>
-        <prod_priceout>20.0000</prod_priceout>
-        <storeid>1</storeid>
-        <storedesc>Hovedlager</storedesc>
-        <storelocation>Hovedlager</storelocation>
-        <prodstock>273.000</prodstock>
-        <ordered>.000</ordered>
-        <reserved>.000</reserved>
-        <disp>273.000</disp>
-        <maxstock>.000</maxstock>
-        <minstock>.000</minstock>
-        <ordercount>.000</ordercount>
-        <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
-            lyst kjøtt.
-        </note>
-        <technote>Energi (kcal/kj) 437/1931
-            Fett 45g
-            hvorav Mettet Fett 5.4g
-            Karbohydrat 4.2g
-            hvorav Sukker 1.5g
-            Protein 4.4g
-            Salt 2.2g
-            Kostfiber 0.7g
-        </technote>
-        <prodnote>solsikkeolje 40%, basilikum 25%, vann, revet ost 5% (MELK, inneholder lysozym fra EGG), CASHEWNØTTER
-            3.3%, potetflak, salt, sukker, extra virgin olivenolje 0.5%, hvitløk 0.1%, vegetabilske fiber, pinjekjerner,
-            surhetsregulerende middel: melkesyre.
-        </prodnote>
-        <annenote>Temperatur, min. romtemperatur
-            Temperatur, max. romtemperatur
-            Holdbarhet, total 3 år
-        </annenote>
-        <lblprodnr>Produktnr.</lblprodnr>
-        <lblnavn>Navn</lblnavn>
-        <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
-        <lblmva>Mva.</lblmva>
-        <lblprodtype>Produktkategori</lblprodtype>
-        <lblprodgrp>Produktgruppe</lblprodgrp>
-        <lblundergrp>Undergruppe</lblundergrp>
-        <lblinaktiv>Inaktiv</lblinaktiv>
-        <lblkomp>Komponent</lblkomp>
-        <lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev>
-        <lblkontaktkat>Kontaktkategori</lblkontaktkat>
-        <lbllevnr>Leverandørnr.</lbllevnr>
-        <lbllev>Leverandør</lbllev>
-        <lbllevprodnr>Leverandørens produktnr.</lbllevprodnr>
-        <lblinnkjopspris>Innkjøpspris</lblinnkjopspris>
-        <lblkostnader>Kostnader</lblkostnader>
-        <lblkostpris>Kostpris</lblkostpris>
-        <lblavanse>Avanse</lblavanse>
-        <lblsalgspris>Salgspris</lblsalgspris>
-        <lblnr>Nr.</lblnr>
-        <lbllagernavn>Lagernavn</lbllagernavn>
-        <lbllagerlok>Lagerlokasjon</lbllagerlok>
-        <lblantall>Antall</lblantall>
-        <lblfralev>I innkjøp</lblfralev>
-        <lblfrakunder>Til kunder</lblfrakunder>
-        <lbldisp>Disponible</lbldisp>
-        <lblmax>Maks. nivå</lblmax>
-        <lblmin>Min. nivå</lblmin>
-        <lblbestnivaa>Innkjøpsnivå</lblbestnivaa>
-        <lblbestantall>Best. antall</lblbestantall>
-        <lblprodinfo>Produktinformasjon</lblprodinfo>
-        <lblsalgsinfo>Salgsinformasjon</lblsalgsinfo>
-        <lbltekinfo>Teknisk informasjon</lbltekinfo>
-        <lblsupport>Support</lblsupport>
-        <lblproduksjon>Produksjon</lblproduksjon>
-        <lblannet>Annet</lblannet>
-    </g_otemp>
-    <g_otemp>
-        <prodid>102030</prodid>
-        <desc>Pesto Rosso 180 g (Davenia)</desc>
-        <unit>Glass</unit>
-        <quantity>1.000</quantity>
-        <weight>180.000</weight>
-        <weightunit>gram</weightunit>
-        <volume>.000</volume>
-        <volumeunit>m3</volumeunit>
-        <delitime>0</delitime>
-        <cvat>15.00</cvat>
-        <prodtype>MAT</prodtype>
-        <prodgroup>DIVERSE MAT</prodgroup>
-        <prodgroupex>Pesto</prodgroupex>
-        <inactive>false</inactive>
-        <component>false</component>
-        <deltime/>
-        <cdata12>(Ingen)</cdata12>
-        <vendid>10272</vendid>
-        <vendname>DAVENIA Alimentar Commercial srl</vendname>
-        <vendcode>SUG20004</vendcode>
-        <prod_pricein>8.1100</prod_pricein>
-        <prod_cost>3.0000</prod_cost>
-        <prod_pricecost>11.1100</prod_pricecost>
-        <prod_profit>8.8900</prod_profit>
-        <prod_priceout>20.0000</prod_priceout>
-        <storeid>1</storeid>
-        <storedesc>Hovedlager</storedesc>
-        <storelocation>Hovedlager</storelocation>
-        <prodstock>21.000</prodstock>
-        <ordered>.000</ordered>
-        <reserved>.000</reserved>
-        <disp>21.000</disp>
-        <maxstock>.000</maxstock>
-        <minstock>.000</minstock>
-        <ordercount>.000</ordercount>
-        <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
-            lyst kjøtt. Dette er en rød pesto med tomat.
-        </note>
-        <technote>Energi (kcal/kj) 388/1625
-            Fett 37.8g
-            hvorav Mettet Fett 4.7g
-            Karbohydrat 6.6g
-            hvorav Sukker 4.4g
-            Protein 4.4g
-            Salt 2.2g
-        </technote>
-        <prodnote>Tomatpure 33.5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16.5% (søltorkede tomat, vann,
-            vineddik(SULFITT), salt, antioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum,
-            CASHEWNØTTER, revet ost 3.5% (MELK, inneholder lysozym fra EGG), salt, pecorino ost 1%(MELK), melkesyre.
-        </prodnote>
-        <annenote>Temperatur, min. romtemperatur
-            Temperatur, max. romtemperatur
-            Holdbarhet, total 3 år
-        </annenote>
-        <lblprodnr>Produktnr.</lblprodnr>
-        <lblnavn>Navn</lblnavn>
-        <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
-        <lblmva>Mva.</lblmva>
-        <lblprodtype>Produktkategori</lblprodtype>
-        <lblprodgrp>Produktgruppe</lblprodgrp>
-        <lblundergrp>Undergruppe</lblundergrp>
-        <lblinaktiv>Inaktiv</lblinaktiv>
-        <lblkomp>Komponent</lblkomp>
-        <lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev>
-        <lblkontaktkat>Kontaktkategori</lblkontaktkat>
-        <lbllevnr>Leverandørnr.</lbllevnr>
-        <lbllev>Leverandør</lbllev>
-        <lbllevprodnr>Leverandørens produktnr.</lbllevprodnr>
-        <lblinnkjopspris>Innkjøpspris</lblinnkjopspris>
-        <lblkostnader>Kostnader</lblkostnader>
-        <lblkostpris>Kostpris</lblkostpris>
-        <lblavanse>Avanse</lblavanse>
-        <lblsalgspris>Salgspris</lblsalgspris>
-        <lblnr>Nr.</lblnr>
-        <lbllagernavn>Lagernavn</lbllagernavn>
-        <lbllagerlok>Lagerlokasjon</lbllagerlok>
-        <lblantall>Antall</lblantall>
-        <lblfralev>I innkjøp</lblfralev>
-        <lblfrakunder>Til kunder</lblfrakunder>
-        <lbldisp>Disponible</lbldisp>
-        <lblmax>Maks. nivå</lblmax>
-        <lblmin>Min. nivå</lblmin>
-        <lblbestnivaa>Innkjøpsnivå</lblbestnivaa>
-        <lblbestantall>Best. antall</lblbestantall>
-        <lblprodinfo>Produktinformasjon</lblprodinfo>
-        <lblsalgsinfo>Salgsinformasjon</lblsalgsinfo>
-        <lbltekinfo>Teknisk informasjon</lbltekinfo>
-        <lblsupport>Support</lblsupport>
-        <lblproduksjon>Produksjon</lblproduksjon>
-        <lblannet>Annet</lblannet>
-    </g_otemp>
-    <g_otemp>
-        <prodid>102031</prodid>
-        <desc>Pesto Rustico ai Carciofi 180 g (Davenia)</desc>
-        <unit>Glass</unit>
-        <quantity>1.000</quantity>
-        <weight>180.000</weight>
-        <weightunit>gram</weightunit>
-        <volume>.000</volume>
-        <volumeunit>m3</volumeunit>
-        <delitime>0</delitime>
-        <cvat>15.00</cvat>
-        <prodtype>MAT</prodtype>
-        <prodgroup>DIVERSE MAT</prodgroup>
-        <prodgroupex>Pesto</prodgroupex>
-        <inactive>false</inactive>
-        <component>false</component>
-        <deltime/>
-        <cdata12>(Ingen)</cdata12>
-        <vendid>10272</vendid>
-        <vendname>DAVENIA Alimentar Commercial srl</vendname>
-        <vendcode>SUG20004</vendcode>
-        <prod_pricein>8.4000</prod_pricein>
-        <prod_cost>3.0100</prod_cost>
-        <prod_pricecost>11.4100</prod_pricecost>
-        <prod_profit>8.5900</prod_profit>
-        <prod_priceout>20.0000</prod_priceout>
-        <storeid>1</storeid>
-        <storedesc>Hovedlager</storedesc>
-        <storelocation>Hovedlager</storelocation>
-        <prodstock>110.000</prodstock>
-        <ordered>.000</ordered>
-        <reserved>.000</reserved>
-        <disp>110.000</disp>
-        <maxstock>.000</maxstock>
-        <minstock>.000</minstock>
-        <ordercount>.000</ordercount>
-        <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
-            lyst kjøtt. Dette er en pesto laget på artisjokk.
-        </note>
-        <technote>Energi (kcal/kj) 326/1336
-            Fett 32.7g
-            hvorav Mettet Fett 3.5g
-            Karbohydrat 3.9g
-            hvorav Sukker 0.8g
-            Protein 2.9g
-            Salt 2g
-            Kostfiber 2.6g
-        </technote>
-        <prodnote>Artisjokker 59%, solsikkeolje, extra virgin olivenolje 3%, VALNØTTER, basilikum, salt, revet OST 0,6%
-            (inneholder lysozym fra EGG), dekstrose, hvitløk, surhetsregulerende: sitronsyre, antioksidant:
-            askorbinsyre.
-        </prodnote>
-        <annenote>Temperatur, min. romtemperatur
-            Temperatur, max. romtemperatur
-            Holdbarhet, total 3 år
-        </annenote>
-        <lblprodnr>Produktnr.</lblprodnr>
-        <lblnavn>Navn</lblnavn>
-        <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
-        <lblmva>Mva.</lblmva>
-        <lblprodtype>Produktkategori</lblprodtype>
-        <lblprodgrp>Produktgruppe</lblprodgrp>
-        <lblundergrp>Undergruppe</lblundergrp>
-        <lblinaktiv>Inaktiv</lblinaktiv>
-        <lblkomp>Komponent</lblkomp>
-        <lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev>
-        <lblkontaktkat>Kontaktkategori</lblkontaktkat>
-        <lbllevnr>Leverandørnr.</lbllevnr>
-        <lbllev>Leverandør</lbllev>
-        <lbllevprodnr>Leverandørens produktnr.</lbllevprodnr>
-        <lblinnkjopspris>Innkjøpspris</lblinnkjopspris>
-        <lblkostnader>Kostnader</lblkostnader>
-        <lblkostpris>Kostpris</lblkostpris>
-        <lblavanse>Avanse</lblavanse>
-        <lblsalgspris>Salgspris</lblsalgspris>
-        <lblnr>Nr.</lblnr>
-        <lbllagernavn>Lagernavn</lbllagernavn>
-        <lbllagerlok>Lagerlokasjon</lbllagerlok>
-        <lblantall>Antall</lblantall>
-        <lblfralev>I innkjøp</lblfralev>
-        <lblfrakunder>Til kunder</lblfrakunder>
-        <lbldisp>Disponible</lbldisp>
-        <lblmax>Maks. nivå</lblmax>
-        <lblmin>Min. nivå</lblmin>
-        <lblbestnivaa>Innkjøpsnivå</lblbestnivaa>
-        <lblbestantall>Best. antall</lblbestantall>
-        <lblprodinfo>Produktinformasjon</lblprodinfo>
-        <lblsalgsinfo>Salgsinformasjon</lblsalgsinfo>
-        <lbltekinfo>Teknisk informasjon</lbltekinfo>
-        <lblsupport>Support</lblsupport>
-        <lblproduksjon>Produksjon</lblproduksjon>
-        <lblannet>Annet</lblannet>
-    </g_otemp>
-    <g_otemp>
-        <prodid>102577</prodid>
-        <desc>Pesto Rosso 1.062kg (Davenia)</desc>
-        <unit>Glass</unit>
-        <quantity>1.000</quantity>
-        <weight>1.062</weight>
-        <weightunit>kg</weightunit>
-        <volume>.000</volume>
-        <volumeunit>m3</volumeunit>
-        <delitime>0</delitime>
-        <cvat>15.00</cvat>
-        <prodtype>MAT</prodtype>
-        <prodgroup>DIVERSE MAT</prodgroup>
-        <prodgroupex>Pesto</prodgroupex>
-        <inactive>false</inactive>
-        <component>false</component>
-        <deltime/>
-        <cdata12>(Ingen)</cdata12>
-        <vendid>10272</vendid>
-        <vendname>DAVENIA Alimentar Commercial srl</vendname>
-        <vendcode>PES1559</vendcode>
-        <prod_pricein>27.4212</prod_pricein>
-        <prod_cost>5.9988</prod_cost>
-        <prod_pricecost>33.4200</prod_pricecost>
-        <prod_profit>25.5800</prod_profit>
-        <prod_priceout>59.0000</prod_priceout>
-        <storeid>1</storeid>
-        <storedesc>Hovedlager</storedesc>
-        <storelocation>Hovedlager</storelocation>
-        <prodstock>419.000</prodstock>
-        <ordered>.000</ordered>
-        <reserved>.000</reserved>
-        <disp>419.000</disp>
-        <maxstock>.000</maxstock>
-        <minstock>.000</minstock>
-        <ordercount>.000</ordercount>
-        <orderqty>.000</orderqty>
-        <note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi, til fisk og
-            lyst kjøtt. Dette er en rød pesto med tomat.
-        </note>
-        <technote>Energi (kcal/kj) 388/1625
-            Fett 37,8g
-            hvorav Mettet Fett 4,7g
-            Karbohydrat 6,6g
-            hvorav Sukker 4,4g
-            Protein 4,4g
-            Salt 2,2g
-        </technote>
-        <prodnote>Tomatpure 33,5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16,5% (søltorkede tomat, vann,
-            VINEDDIK, salt, atioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum, CASHEWNØTTER, revet
-            OST 3,5% (inneholder lysozym fra EGG), salt, pecorino OST 1%, melkesyre.
-        </prodnote>
-        <annenote>Temperatur, min. romtemperatur
-            Temperatur, max. romtemperatur
-            Holdbarhet, total 3 år
-        </annenote>
-        <lblprodnr>Produktnr.</lblprodnr>
-        <lblnavn>Navn</lblnavn>
-        <lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde>
-        <lblmva>Mva.</lblmva>
-        <lblprodtype>Produktkategori</lblprodtype>
-        <lblprodgrp>Produktgruppe</lblprodgrp>
-        <lblundergrp>Undergruppe</lblundergrp>
-        <lblinaktiv>Inaktiv</lblinaktiv>
-        <lblkomp>Komponent</lblkomp>
-        <lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev>
-        <lblkontaktkat>Kontaktkategori</lblkontaktkat>
-        <lbllevnr>Leverandørnr.</lbllevnr>
-        <lbllev>Leverandør</lbllev>
-        <lbllevprodnr>Leverandørens produktnr.</lbllevprodnr>
-        <lblinnkjopspris>Innkjøpspris</lblinnkjopspris>
-        <lblkostnader>Kostnader</lblkostnader>
-        <lblkostpris>Kostpris</lblkostpris>
-        <lblavanse>Avanse</lblavanse>
-        <lblsalgspris>Salgspris</lblsalgspris>
-        <lblnr>Nr.</lblnr>
-        <lbllagernavn>Lagernavn</lbllagernavn>
-        <lbllagerlok>Lagerlokasjon</lbllagerlok>
-        <lblantall>Antall</lblantall>
-        <lblfralev>I innkjøp</lblfralev>
-        <lblfrakunder>Til kunder</lblfrakunder>
-        <lbldisp>Disponible</lbldisp>
-        <lblmax>Maks. nivå</lblmax>
-        <lblmin>Min. nivå</lblmin>
-        <lblbestnivaa>Innkjøpsnivå</lblbestnivaa>
-        <lblbestantall>Best. antall</lblbestantall>
-        <lblprodinfo>Produktinformasjon</lblprodinfo>
-        <lblsalgsinfo>Salgsinformasjon</lblsalgsinfo>
-        <lbltekinfo>Teknisk informasjon</lbltekinfo>
-        <lblsupport>Support</lblsupport>
-        <lblproduksjon>Produksjon</lblproduksjon>
-        <lblannet>Annet</lblannet>
-    </g_otemp>
-</VFPData>
+<?xml version = "1.0" encoding="Windows-1252" standalone="yes"?><VFPData><g_otemp><prodid>100301</prodid><desc>Pesto La Gallinara 130 g</desc><unit>Glass</unit><quantity>1.000</quantity><weight>130.000</weight><weightunit>gram</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>Leverandør</cdata12><vendid>10003</vendid><vendname>Real Formaggi</vendname><vendcode>81043</vendcode><prod_pricein>19.0200</prod_pricein><prod_cost>1.1100</prod_cost><prod_pricecost>20.1300</prod_pricecost><prod_profit>7.8700</prod_profit><prod_priceout>28.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>318.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>318.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi,  til fisk og lyst kjøtt.</note><technote>Energi (kcal/kj)    2650/640
+Fett    65g
+hvorav Mettet Fett    10g
+Karbohydrat    10g
+hvorav Sukker    5.8g
+Protein    5g
+Salt	    2g			</technote><prodnote>Olivenolje, basilikum Genovese D.O.P. (26%), grana padano OST (innhold lysozym fra EGG), pecorino OST, hvitløk,  CASHEWNØTTER, salt, pinjekjerner, vegetabilsk fiber, surhetsregulerende middel: sitronsyre</prodnote><annenote>Temperatur, min.    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total    18 måneder</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>100334</prodid><desc>Pesto alla Genovese 1 kg</desc><unit>Spann</unit><quantity>1.000</quantity><weight>1.000</weight><weightunit>kg</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime>5-10</deltime><cdata12>Leverandør</cdata12><vendid>10003</vendid><vendname>Real Formaggi</vendname><vendcode>81042</vendcode><prod_pricein>56.7207</prod_pricein><prod_cost>8.1700</prod_cost><prod_pricecost>64.8907</prod_pricecost><prod_profit>35.1093</prod_profit><prod_priceout>100.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>63.000</prodstock><ordered>55.000</ordered><reserved>.000</reserved><disp>118.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi,  til fisk og lyst kjøtt. Kjølevare</note><technote>Energi (kcal/kj)    573/2364
+Fett    56.8g
+hvorav Mettet Fett    8.9g
+Karbohydrat    10.1g
+hvorav Sukker    5.1g
+Protein    5.2g
+Salt    2.9g</technote><prodnote>solsikkeolje, Genovese basil DOP 37,5%,  CASHEWNØTTER, vegetabilsk margarin, dehydrert ost (MELK, salt,
+rennet), myse av melkepulver, pinjekjerner, VALNØTTER, hvitløk, naturlige smaker, konserveringsmiddel: E200.</prodnote><annenote>Temperatur, min.    0 °C
+Temperatur, max.    4 °C
+Holdbarhet, total    93 dager</annenote><supportnote>kan innehold spor av: SØYA</supportnote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>101438</prodid><desc>Pesto rosso i solsikkeolje 125 g (Alis)</desc><unit>Glass</unit><quantity>1.000</quantity><weight>125.000</weight><weightunit>gram</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>(Ingen)</cdata12><vendid>10011</vendid><vendname>Alis s.r.l.</vendname><vendcode>003980198</vendcode><prod_pricein>13.1000</prod_pricein><prod_cost>0.8100</prod_cost><prod_pricecost>13.9100</prod_pricecost><prod_profit>14.0900</prod_profit><prod_priceout>28.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>26.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>26.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto rosso er laget med pinjekjerner, basilikum og tomat og brukes mye i Sør-Italia.</note><technote>Energi (kcal/kj)    200/837
+Fett    18g
+hvorav Mettet Fett    1.8g
+Karbohydrat    3.5g
+hvorav Sukker    - g
+Protein    4.8g
+Salt    0.17g
+Kostfiber    1.7g</technote><prodnote>solsikkeolje 40%, tørkede tomater 25%,  genovese basilikum DOP 7%, cashewnøtter (NØTTER), pulverisert prosessert ost (MELK), hvitløk, pinjekjerner, extra virgin olivenolje, potetmel, mais, fiber, salt, naturlig aroma av chili pepper, surhetsregulerende middel: glucono delta lakton E575.</prodnote><annenote>Temperatur, min.    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total    2 år</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>102029</prodid><desc>Pesto Genovese 180 g (Davenia)</desc><unit>Glass</unit><quantity>1.000</quantity><weight>180.000</weight><weightunit>gram</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>(Ingen)</cdata12><vendid>10272</vendid><vendname>DAVENIA Alimentar Commercial srl</vendname><vendcode>SUG15034</vendcode><prod_pricein>7.8400</prod_pricein><prod_cost>3.0100</prod_cost><prod_pricecost>10.8500</prod_pricecost><prod_profit>9.1500</prod_profit><prod_priceout>20.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>157.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>157.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi,  til fisk og lyst kjøtt.</note><technote>Energi (kcal/kj)    437/1931
+Fett    45g
+hvorav Mettet Fett    5.4g
+Karbohydrat    4.2g
+hvorav Sukker    1.5g
+Protein    4.4g
+Salt	    2.2g
+Kostfiber    0.7g</technote><prodnote>solsikkeolje 40%, basilikum 25%, vann, revet ost 5% (MELK, inneholder lysozym fra EGG), CASHEWNØTTER 3.3%, potetflak, salt, sukker, extra virgin olivenolje 0.5%, hvitløk 0.1%, vegetabilske fiber, pinjekjerner, surhetsregulerende middel: melkesyre.</prodnote><annenote>Temperatur, min.	    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total	    3 år</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>102030</prodid><desc>Pesto Rosso 180 g (Davenia)</desc><unit>Glass</unit><quantity>1.000</quantity><weight>180.000</weight><weightunit>gram</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>(Ingen)</cdata12><vendid>10272</vendid><vendname>DAVENIA Alimentar Commercial srl</vendname><vendcode>SUG20004</vendcode><prod_pricein>8.1624</prod_pricein><prod_cost>3.0000</prod_cost><prod_pricecost>11.1624</prod_pricecost><prod_profit>8.8376</prod_profit><prod_priceout>20.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>197.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>197.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi,  til fisk og lyst kjøtt. Dette er en rød pesto med tomat.</note><technote>Energi (kcal/kj)    388/1625
+Fett	    37.8g
+hvorav Mettet Fett    4.7g
+Karbohydrat    6.6g
+hvorav Sukker    4.4g
+Protein    4.4g
+Salt	    2.2g</technote><prodnote>Tomatpure 33.5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16.5% (søltorkede tomat, vann, vineddik(SULFITT), salt, antioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum, CASHEWNØTTER, revet ost 3.5% (MELK, inneholder lysozym fra EGG), salt, pecorino ost 1%(MELK), melkesyre.</prodnote><annenote>Temperatur, min.	    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total	    3 år</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>102031</prodid><desc>Pesto Rustico ai Carciofi 180 g (Davenia)</desc><unit>Glass</unit><quantity>1.000</quantity><weight>180.000</weight><weightunit>gram</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>(Ingen)</cdata12><vendid>10272</vendid><vendname>DAVENIA Alimentar Commercial srl</vendname><vendcode>SUG20004</vendcode><prod_pricein>8.4000</prod_pricein><prod_cost>3.0100</prod_cost><prod_pricecost>11.4100</prod_pricecost><prod_profit>8.5900</prod_profit><prod_priceout>20.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>257.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>257.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi,  til fisk og lyst kjøtt. Dette er en pesto laget på artisjokk.</note><technote>Energi (kcal/kj)    326/1336
+Fett    32.7g
+hvorav Mettet Fett    3.5g
+Karbohydrat    3.9g
+hvorav Sukker    0.8g
+Protein    2.9g
+Salt    2g
+Kostfiber    2.6g</technote><prodnote>Artisjokker 59%, solsikkeolje, extra virgin olivenolje 3%, VALNØTTER, basilikum, salt, revet OST 0,6% (inneholder lysozym fra EGG), dekstrose, hvitløk, surhetsregulerende: sitronsyre, antioksidant: askorbinsyre.</prodnote><annenote>Temperatur, min.	    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total	    3 år</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>102257</prodid><desc>Pesto Rosso 130 g, La Gallinara</desc><unit>Glass</unit><quantity>1.000</quantity><weight>130.000</weight><weightunit>gram</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>Leverandør</cdata12><vendid>10003</vendid><vendname>Real Formaggi</vendname><vendcode>81047</vendcode><prod_pricein>28.7200</prod_pricein><prod_cost>1.1100</prod_cost><prod_pricecost>29.8300</prod_pricecost><prod_profit>14.1700</prod_profit><prod_priceout>44.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>90.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>90.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi,  til fisk og lyst kjøtt. Dette er en rød pesto med tomat.</note><technote>Energi (kcal/kj)    650/2300
+Fett    55g
+hvorav Mettet Fett    10g
+Karbohydrat    7g
+hvorav Sukker    6g
+Protein    4.7g
+Salt    2.5g</technote><prodnote>Tørkede tomater (36%), Basilico Genovese (10%), olivenolje, grana padano OST(innholder lysozym fra EGG), pecorino OST vegetabilske fiber, CASHEWNØTTER, hvitløk, salt, pinjekjerner. surhetsregulerende middel: sitronsyre</prodnote><annenote>Temperatur, min.    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total    2 år</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>102577</prodid><desc>Pesto Rosso 1.062kg (Davenia)</desc><unit>Glass</unit><quantity>1.000</quantity><weight>1.062</weight><weightunit>kg</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>(Ingen)</cdata12><vendid>10272</vendid><vendname>DAVENIA Alimentar Commercial srl</vendname><vendcode>PES1559</vendcode><prod_pricein>27.4212</prod_pricein><prod_cost>5.9988</prod_cost><prod_pricecost>33.4200</prod_pricecost><prod_profit>25.5800</prod_profit><prod_priceout>59.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>623.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>623.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Pesto er en italiensk klassiker og kan benyttes på sandwicher, piadina, til pasta, gnocchi,  til fisk og lyst kjøtt. Dette er en rød pesto med tomat.</note><technote>Energi (kcal/kj)    388/1625
+Fett	    37,8g
+hvorav Mettet Fett    4,7g
+Karbohydrat    6,6g
+hvorav Sukker    4,4g
+Protein    4,4g
+Salt	    2,2g</technote><prodnote>Tomatpure 33,5%, solsikkeolje 31%, rehydrerte soltørkede tomater 16,5% (søltorkede tomat, vann, VINEDDIK, salt, atioksidant: askorbinsyre, surhetsregulerende: sitronsyre), basilikum, CASHEWNØTTER, revet OST 3,5% (inneholder lysozym fra EGG), salt, pecorino OST 1%, melkesyre.</prodnote><annenote>Temperatur, min.	    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total	    3 år</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp><g_otemp><prodid>102658</prodid><desc>Pesto alla Cetarese con Colatura di alici 110 gr</desc><unit>Glass</unit><quantity>1.000</quantity><weight>110.000</weight><weightunit>gram</weightunit><volume>.000</volume><volumeunit>m3</volumeunit><delitime>0</delitime><cvat>15.00</cvat><prodtype>MAT</prodtype><prodgroup>DIVERSE MAT</prodgroup><prodgroupex>Pesto</prodgroupex><inactive>false</inactive><component>false</component><deltime/><cdata12>Leverandør</cdata12><vendid>10613</vendid><vendname>Latteria Sorrentina - FORMALACTIS SRL</vendname><vendcode/><prod_pricein>26.5237</prod_pricein><prod_cost>5.0000</prod_cost><prod_pricecost>31.5237</prod_pricecost><prod_profit>17.4763</prod_profit><prod_priceout>49.0000</prod_priceout><storeid>1</storeid><storedesc>Hovedlager</storedesc><storelocation>Hovedlager</storelocation><prodstock>104.000</prodstock><ordered>.000</ordered><reserved>.000</reserved><disp>104.000</disp><maxstock>.000</maxstock><minstock>.000</minstock><ordercount>.000</ordercount><orderqty>.000</orderqty><note>Dette er en sør-italiensk pesto som blant annet passer ypperlig til sjømat. Den inneholder ansjosolje, olivenolje extra virgin, valnøtter, mandler, pinjekjerner, grønne og sorte oliven, samt kapers. krydret med persille, oregano, basilikum og chili.</note><annenote>Temperatur, min.    romtemperatur
+Temperatur, max.    romtemperatur
+Holdbarhet, total    18 måneder</annenote><lblprodnr>Produktnr.</lblprodnr><lblnavn>Navn</lblnavn><lbllevtidkunde>Leveringstid til kunde</lbllevtidkunde><lblmva>Mva.</lblmva><lblprodtype>Produktkategori</lblprodtype><lblprodgrp>Produktgruppe</lblprodgrp><lblundergrp>Undergruppe</lblundergrp><lblinaktiv>Inaktiv</lblinaktiv><lblkomp>Komponent</lblkomp><lbllevtidlev>Leveringstid fra leverandør</lbllevtidlev><lblkontaktkat>Kontaktkategori</lblkontaktkat><lbllevnr>Leverandørnr.</lbllevnr><lbllev>Leverandør</lbllev><lbllevprodnr>Leverandørens produktnr.</lbllevprodnr><lblinnkjopspris>Innkjøpspris</lblinnkjopspris><lblkostnader>Kostnader</lblkostnader><lblkostpris>Kostpris</lblkostpris><lblavanse>Avanse</lblavanse><lblsalgspris>Salgspris</lblsalgspris><lblnr>Nr.</lblnr><lbllagernavn>Lagernavn</lbllagernavn><lbllagerlok>Lagerlokasjon</lbllagerlok><lblantall>Antall</lblantall><lblfralev>I innkjøp</lblfralev><lblfrakunder>Til kunder</lblfrakunder><lbldisp>Disponible</lbldisp><lblmax>Maks. nivå</lblmax><lblmin>Min. nivå</lblmin><lblbestnivaa>Innkjøpsnivå</lblbestnivaa><lblbestantall>Best. antall</lblbestantall><lblprodinfo>Produktinformasjon</lblprodinfo><lblsalgsinfo>Salgsinformasjon</lblsalgsinfo><lbltekinfo>Teknisk informasjon</lbltekinfo><lblsupport>Support</lblsupport><lblproduksjon>Produksjon</lblproduksjon><lblannet>Annet</lblannet></g_otemp></VFPData>

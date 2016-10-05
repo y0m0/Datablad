@@ -103,7 +103,8 @@ li {
 }
 
 .ingredients p {
-	padding-left: 0.312em;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .field{
