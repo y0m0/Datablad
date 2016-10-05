@@ -86,6 +86,21 @@ def make_html(prod_dict):
                                                     text(value[1])
 
                         with tag('div', klass='allergens'):
+                            allergens = {'gluten':'nei',
+                                        'skalldyr':'nei',
+                                        'egg':'nei',
+                                        'fisk':'nei',
+                                        'peanøtter':'nei',
+                                        'soya':'nei',
+                                        'melk':'nei',
+                                        'nøtter':'nei',
+                                        'selleri':'nei',
+                                        'sennep':'nei',
+                                        'sesamfrø':'nei',
+                                        'svoveldioksid eller sulfitter':'nei',
+                                        'lupin':'nei',
+                                        'bløtdyr':'nei'
+                                        }
                             with tag('h2'):
                                 text('Allergener')
                             with tag('ul', klass='field'):
