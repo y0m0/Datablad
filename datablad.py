@@ -76,10 +76,8 @@ def make_html(prod_dict):
                                     for lines in re.split('\n', prod.technote.text):
                                         line = lines.lstrip()
                                         if line != "":
-                                            print(line)
                                             with tag('tr'):
                                                 value = re.split('    ', line)
-                                                print(value)
                                                 with tag('td'):
                                                     text(value[0])
                                                 with tag('td', klass='amount'):
@@ -107,15 +105,13 @@ def make_html(prod_dict):
                                         with tag('th', colspan='2'):
                                             text('Allergener')
                                 with tag('tbody'):
+                                    for word in re.split('[.,() ]+', prod.prodnote.text):
+                                        if word.isupper() and word.isalpha() and len(word) > 2:
+                                            print(word)
+                                            if word.lower() in allergens:
+                                                allergens[word.lower()] = 'ja'
+                                    print(allergens)
 
-                            # with tag('h2'):
-                            #     text('Allergener')
-                            # with tag('ul', klass='field'):
-                            #     for word in set(re.split('[.,() ]+', prod.prodnote.text)):
-                            #         if word.isupper() and word.isalpha() and len(word) > 2:
-                            #             if word.lower() in allergens:
-                            #                 allergens[word.lower()] = 'ja'
-                            #
                             #     with tag('li'):
                             #             text(word.capitalize())
 
