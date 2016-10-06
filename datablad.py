@@ -101,13 +101,23 @@ def make_html(prod_dict):
                                         'lupin':'nei',
                                         'bløtdyr':'nei'
                                         }
-                            with tag('h2'):
-                                text('Allergener')
-                            with tag('ul', klass='field'):
-                                for word in set(re.split('[\[\]/{}.,() ]+', prod.prodnote.text)):
-                                    if word.isupper() and word.isalpha():
-                                        with tag('li'):
-                                            text(word.capitalize())
+                            with tag('table'):
+                                with tag('thead'):
+                                    with tag('tr'):
+                                        with tag('th', colspan='2'):
+                                            text('Allergener')
+                                with tag('tbody'):
+
+                            # with tag('h2'):
+                            #     text('Allergener')
+                            # with tag('ul', klass='field'):
+                            #     for word in set(re.split('[.,() ]+', prod.prodnote.text)):
+                            #         if word.isupper() and word.isalpha() and len(word) > 2:
+                            #             if word.lower() in allergens:
+                            #                 allergens[word.lower()] = 'ja'
+                            #
+                            #     with tag('li'):
+                            #             text(word.capitalize())
 
                         with tag('div', klass='storage'):
                             with tag('h2'):
