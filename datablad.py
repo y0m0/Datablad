@@ -6,6 +6,7 @@
 import re
 import codecs
 from lxml import objectify
+from collections import OrderedDict
 from yattag import Doc, indent
 
 
@@ -84,21 +85,20 @@ def make_html(prod_dict):
                                                     text(value[1])
 
                         with tag('div', klass='allergens'):
-                            allergens = {'gluten':'nei',
-                                        'skalldyr':'nei',
-                                        'egg':'nei',
-                                        'fisk':'nei',
-                                        'peanøtter':'nei',
-                                        'soya':'nei',
-                                        'melk':'nei',
-                                        'nøtter':'nei',
-                                        'selleri':'nei',
-                                        'sennep':'nei',
-                                        'sesamfrø':'nei',
-                                        'svoveldioksid eller sulfitter':'nei',
-                                        'lupin':'nei',
-                                        'bløtdyr':'nei'
-                                        }
+                            allergens = OrderedDict([('gluten', 'nei'),
+                                        ('skalldyr', 'nei'),
+                                        ('egg', 'nei'),
+                                        ('fisk', 'nei'),
+                                        ('peanøtter', 'nei'),
+                                        ('soya', 'nei'),
+                                        ('melk', 'nei'),
+                                        ('nøtter', 'nei'),
+                                        ('selleri', 'nei'),
+                                        ('sennep', 'nei'),
+                                        ('sesamfrø', 'nei'),
+                                        ('sulfitter', 'nei'),
+                                        ('lupin', 'nei'),
+                                        ('bløtdyr', 'nei')])
                             with tag('table'):
                                 with tag('thead'):
                                     with tag('tr'):
@@ -107,21 +107,30 @@ def make_html(prod_dict):
                                 with tag('tbody'):
                                     for word in re.split('[.,() ]+', prod.prodnote.text):
                                         if word.isupper() and word.isalpha() and len(word) > 2:
-                                            print(word)
                                             if word.lower() in allergens:
                                                 allergens[word.lower()] = 'ja'
-                                    print(allergens)
-
-                            #     with tag('li'):
-                            #             text(word.capitalize())
+                                    for key, value in allergens.items():
+                                        with tag('tr'):
+                                            with tag('td'):
+                                                text(key.capitalize())
+                                            with tag('td'):
+                                                text(value.capitalize())
 
                         with tag('div', klass='storage'):
-                            with tag('h2'):
-                                text('Oppbevaring')
-                            with tag('ul', klass='field'):
-                                for word in re.split('\n', prod.annenote.text):
-                                    with tag('li'):
-                                        text(word)
+                            with tag('table'):
+                                with tag('thead'):
+                                    with tag('tr'):
+                                        with tag('th', colspan='2'):
+                                            text('Oppbevaring')
+                                with tag('tbody'):
+                                    for lines in re.split('\n', prod.annenote.text):
+                                        line = lines.lstrip()
+                                        with tag('tr'):
+                                            value = re.split('    ', line)
+                                            with tag('td'):
+                                                text(value[0])
+                                            with tag('td', klass='temp'):
+                                                text(value[1])
 
                 with tag('footer', klass='main-footer'):
                     with tag('p'):
