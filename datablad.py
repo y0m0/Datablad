@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-# yattag.py
+# datablad.py
 #
 import re
 import codecs
@@ -45,7 +45,9 @@ def make_html(prod_dict):
                     with tag('div', klass='primary-content group'):
 
                         with tag('div', klass='product-picture'):
-                            doc.stag('img', src='http://www.villaimport.no/images/produktbilder/Full%20Size/'+ prod.prodid.text + '.jpg', alt=prod.desc.text)
+                            doc.stag('img',
+                                     src='http://www.villaimport.no/images/produktbilder/Full%20Size/' +
+                                         prod.prodid.text + '.jpg', alt=prod.desc.text)
 
                         with tag('div', klass='product-details'):
                             with tag('div', klass='basic-info'):
@@ -57,8 +59,8 @@ def make_html(prod_dict):
                                     with tag('li'):
                                         text('Produktgruppe: ' + prod.prodgroupex.text)
                                     with tag('li'):
-                                        text('Pakning: ' + re.sub('.000', '',
-                                                                  prod.weight.text) + ' ' + prod.weightunit.text)
+                                        text('Pakning: ' + re.sub('.000', '', prod.weight.text) +
+                                                                  ' ' + prod.weightunit.text)
 
                             with tag('div', klass='ingredients'):
                                 with tag('h2'):
@@ -86,19 +88,19 @@ def make_html(prod_dict):
 
                         with tag('div', klass='allergens'):
                             allergens = OrderedDict([('gluten', 'nei'),
-                                        ('skalldyr', 'nei'),
-                                        ('egg', 'nei'),
-                                        ('fisk', 'nei'),
-                                        ('peanøtter', 'nei'),
-                                        ('soya', 'nei'),
-                                        ('melk', 'nei'),
-                                        ('nøtter', 'nei'),
-                                        ('selleri', 'nei'),
-                                        ('sennep', 'nei'),
-                                        ('sesamfrø', 'nei'),
-                                        ('sulfitter', 'nei'),
-                                        ('lupin', 'nei'),
-                                        ('bløtdyr', 'nei')])
+                                                     ('skalldyr', 'nei'),
+                                                     ('egg', 'nei'),
+                                                     ('fisk', 'nei'),
+                                                     ('peanøtter', 'nei'),
+                                                     ('soya', 'nei'),
+                                                     ('melk', 'nei'),
+                                                     ('nøtter', 'nei'),
+                                                     ('selleri', 'nei'),
+                                                     ('sennep', 'nei'),
+                                                     ('sesamfrø', 'nei'),
+                                                     ('sulfitter', 'nei'),
+                                                     ('lupin', 'nei'),
+                                                     ('bløtdyr', 'nei')])
                             with tag('table'):
                                 with tag('thead'):
                                     with tag('tr'):
@@ -145,5 +147,5 @@ def make_html(prod_dict):
             file.write(indent(doc.getvalue()))
 
 
-xmlfile = input('Select a Catalog File: ');
+xmlfile = input('Select a Catalog File: ')
 make_html(get_products(xmlfile))
