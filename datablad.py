@@ -70,70 +70,72 @@ def make_html(prod_dict):
                                     text(prod.prodnote.text)
 
                     with tag('div', klass='secondary-content'):
-                        with tag('div', klass='energy'):
-                            with tag('table'):
-                                with tag('thead'):
-                                    with tag('tr'):
-                                        with tag('th', colspan='2'):
-                                            text('Næringsinnehold Pr. 100 gram.')
-                                with tag('tbody'):
-                                    for lines in re.split('\n', prod.technote.text):
-                                        line = lines.lstrip()
-                                        if line != "":
+                        with tag('div', klass='col-1'):
+                            with tag('div', klass='energy'):
+                                with tag('table'):
+                                    with tag('thead'):
+                                        with tag('tr'):
+                                            with tag('th', colspan='2'):
+                                                text('Næringsinnehold Pr. 100 gram.')
+                                    with tag('tbody'):
+                                        for lines in re.split('\n', prod.technote.text):
+                                            line = lines.lstrip()
+                                            if line != "":
+                                                with tag('tr'):
+                                                    value = re.split('    ', line)
+                                                    with tag('td'):
+                                                        text(value[0])
+                                                    with tag('td'):
+                                                        text(value[1])
+
+                            with tag('div', klass='storage'):
+                                with tag('table'):
+                                    with tag('thead'):
+                                        with tag('tr'):
+                                            with tag('th', colspan='2'):
+                                                text('Oppbevaring')
+                                    with tag('tbody'):
+                                        for lines in re.split('\n', prod.annenote.text):
+                                            line = lines.lstrip()
                                             with tag('tr'):
                                                 value = re.split('    ', line)
                                                 with tag('td'):
                                                     text(value[0])
-                                                with tag('td', klass='amount'):
+                                                with tag('td'):
                                                     text(value[1])
 
-                        with tag('div', klass='allergens'):
-                            allergens = OrderedDict([('gluten', 'nei'),
-                                                     ('skalldyr', 'nei'),
-                                                     ('egg', 'nei'),
-                                                     ('fisk', 'nei'),
-                                                     ('peanøtter', 'nei'),
-                                                     ('soya', 'nei'),
-                                                     ('melk', 'nei'),
-                                                     ('nøtter', 'nei'),
-                                                     ('selleri', 'nei'),
-                                                     ('sennep', 'nei'),
-                                                     ('sesamfrø', 'nei'),
-                                                     ('sulfitter', 'nei'),
-                                                     ('lupin', 'nei'),
-                                                     ('bløtdyr', 'nei')])
-                            with tag('table'):
-                                with tag('thead'):
-                                    with tag('tr'):
-                                        with tag('th', colspan='2'):
-                                            text('Allergener')
-                                with tag('tbody'):
-                                    for word in re.split('[.,() ]+', prod.prodnote.text):
-                                        if word.isupper() and word.isalpha() and len(word) > 2:
-                                            if word.lower() in allergens:
-                                                allergens[word.lower()] = 'ja'
-                                    for key, value in allergens.items():
+                        with tag('div', klass='col-2'):
+                            with tag('div', klass='allergens'):
+                                allergens = OrderedDict([('gluten', 'nei'),
+                                                         ('skalldyr', 'nei'),
+                                                         ('egg', 'nei'),
+                                                         ('fisk', 'nei'),
+                                                         ('peanøtter', 'nei'),
+                                                         ('soya', 'nei'),
+                                                         ('melk', 'nei'),
+                                                         ('nøtter', 'nei'),
+                                                         ('selleri', 'nei'),
+                                                         ('sennep', 'nei'),
+                                                         ('sesamfrø', 'nei'),
+                                                         ('sulfitter', 'nei'),
+                                                         ('lupin', 'nei'),
+                                                         ('bløtdyr', 'nei')])
+                                with tag('table'):
+                                    with tag('thead'):
                                         with tag('tr'):
-                                            with tag('td'):
-                                                text(key.capitalize())
-                                            with tag('td'):
-                                                text(value.capitalize())
-
-                        with tag('div', klass='storage'):
-                            with tag('table'):
-                                with tag('thead'):
-                                    with tag('tr'):
-                                        with tag('th', colspan='2'):
-                                            text('Oppbevaring')
-                                with tag('tbody'):
-                                    for lines in re.split('\n', prod.annenote.text):
-                                        line = lines.lstrip()
-                                        with tag('tr'):
-                                            value = re.split('    ', line)
-                                            with tag('td'):
-                                                text(value[0])
-                                            with tag('td', klass='temp'):
-                                                text(value[1])
+                                            with tag('th', colspan='2'):
+                                                text('Allergener')
+                                    with tag('tbody'):
+                                        for word in re.split('[.,() ]+', prod.prodnote.text):
+                                            if word.isupper() and word.isalpha() and len(word) > 2:
+                                                if word.lower() in allergens:
+                                                    allergens[word.lower()] = 'ja'
+                                        for key, value in allergens.items():
+                                            with tag('tr'):
+                                                with tag('td'):
+                                                    text(key.capitalize())
+                                                with tag('td'):
+                                                    text(value.capitalize())
 
                 with tag('footer', klass='main-footer'):
                     with tag('p'):

@@ -74,7 +74,7 @@ li {
 }
 
 .storage {
-	padding-bottom: 10px;
+	padding-bottom: 10px;;
 }
 
 .product-picture img {
@@ -104,19 +104,14 @@ li {
 	padding-right: 5px;
 }
 
-/*table {
-	border-collapse: collapse;
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-}*/
-
 .field {
 	background-color: #fff;
 	border: 1px solid #13D2F1;
 }
 
 table {
+	width: 100%;
+	max-width: 100%;
 	border: 1px solid #13D2F1;
 	border-spacing: 0;
 	-moz-border-radius: 6px;
@@ -131,10 +126,6 @@ table th {
 	border-radius: 4px 4px 0 0 ;
 }
 
-tbody tr {
-	border: 1px solid #13D2F1;
-}
-
 table tr:nth-child(even),
 table tr:nth-child(even),
 table tr:nth-child(even) {
@@ -142,10 +133,22 @@ table tr:nth-child(even) {
 	-webkit-print-color-adjust: exact;
 }
 
-table tr:last-child {
-	-moz-border-radius: 0 0 4px 4px;
-	-webkit-border-radius: 0 0 4px 4px ;
-	border-radius: 0 0 4px 4px;
+table tr:last-child td:first-child {
+	-moz-border-radius: 0 0 0 4px;
+	-webkit-border-radius: 0 0 0 4px;
+	border-radius: 0 0 0 4px;
+}
+
+table tr:last-child td:last-child {
+	-moz-border-radius: 0 0 4px 0;
+	-webkit-border-radius: 0 0 4px 0;
+	border-radius: 0 0 4px 0;
+}
+
+.energy .value,
+.allergens .value,
+.storage .value {
+	padding-left: 6px;
 }
 
 .main-footer {
@@ -162,31 +165,29 @@ table tr:last-child {
 .product-picture,
 .product-details,
 .energy,
-.allergens {
+.allergens,
+.storage {
 	max-width: 60%;
 }
 
 .product-picture,
-.energy {
+.col-1 {
 	float: left;
 }
 
 .product-details,
+.col-2,
 .allergens {
 	float: right;
 }
 
-.allergens,
-.energy {
-	min-width: 35%;
+.col-1,
+.col-2 {
+	max-width: 50%;
+	width: 100%;
 }
 
-.storage {
-	margin: 0 auto;
-	max-width: 50%;
-	clear: both;
-	text-align: center;
-}
+
 
 /* Pseudo-classes --------------- */
 
