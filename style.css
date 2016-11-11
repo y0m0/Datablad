@@ -65,16 +65,16 @@ li {
 }
 
 .primary-content {
+	margin: 0 auto;
 	padding-bottom: 30px;
 }
 
-.allergens,
+.secondary-content {
+	margin: 0 auto;
+}
+
 .energy {
-	padding-bottom: 30px;
-}
-
-.storage {
-	padding-bottom: 10px;;
+	padding-bottom: 75px;
 }
 
 .product-picture img {
@@ -111,7 +111,6 @@ li {
 
 table {
 	width: 100%;
-	max-width: 100%;
 	border: 1px solid #13D2F1;
 	border-spacing: 0;
 	-moz-border-radius: 6px;
@@ -121,28 +120,29 @@ table {
 
 table th {
 	background-color: #13D2F1;
+	box-shadow: inset 0 0 0 1000px #13D2F1;
+	-webkit-print-color-adjust: exact;
 	-moz-border-radius: 4px 4px 0 0;
 	-webkit-border-radius: 4px 4px 0 0;
 	border-radius: 4px 4px 0 0 ;
 }
 
-table tr:nth-child(even),
-table tr:nth-child(even),
-table tr:nth-child(even) {
+table tr:nth-child(even) td {
 	background-color: #CECECE;
+	box-shadow: inset 0 0 0 1000px #CECECE;
 	-webkit-print-color-adjust: exact;
 }
 
 table tr:last-child td:first-child {
-	-moz-border-radius: 0 0 0 4px;
-	-webkit-border-radius: 0 0 0 4px;
-	border-radius: 0 0 0 4px;
+	border-bottom-left-radius: 4px;
 }
 
 table tr:last-child td:last-child {
-	-moz-border-radius: 0 0 4px 0;
-	-webkit-border-radius: 0 0 4px 0;
-	border-radius: 0 0 4px 0;
+	border-bottom-right-radius: 4px;
+}
+
+table td {
+	padding-left: 10px;
 }
 
 .energy .value,
@@ -151,7 +151,13 @@ table tr:last-child td:last-child {
 	padding-left: 6px;
 }
 
+.storage,
+.allergens {
+	padding-bottom: 30px;
+}
+
 .main-footer {
+	clear: both;
 	text-align: center;
 	border-top: 2px solid #000000;
 }
@@ -163,11 +169,19 @@ table tr:last-child td:last-child {
 /* Layout Styles ---------------- */
 
 .product-picture,
-.product-details,
-.energy,
-.allergens,
-.storage {
+.product-details {
 	max-width: 60%;
+}
+
+.energy,
+.storage {
+	max-width: 100%;
+	width: 60%;
+}
+
+.allergens {
+	max-width: 100%;
+	width: 60%;
 }
 
 .product-picture,
@@ -183,8 +197,8 @@ table tr:last-child td:last-child {
 
 .col-1,
 .col-2 {
-	max-width: 50%;
 	width: 100%;
+	max-width: 50%;
 }
 
 
@@ -218,8 +232,9 @@ a:hover {
 		padding: 0;
 	}
 
-	.secondary-content div {
-		padding-bottom: 30px;
+	.col-1,
+	.col-2 {
+		max-width: 40%;
 	}
 
 	.product-picture,
@@ -228,18 +243,41 @@ a:hover {
 	.allergens,
 	.storage {
 		max-width: 100%;
+		width: 100%;
 		float: none;
+	}
+
+	.product-picture,
+	.product-details {
 		text-align: center;
+	}
+
+	table tr td:last-child {
+		text-align: right;
+		padding-right: 10px;
+	}
+
+	.energy {
+		padding-bottom: 75px;
 	}
 
 	.main-footer {
 		padding-bottom: 20px;
 	}
+
+	table th {
+		text-align: center;
+	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 580px) {
 	.content {
 		margin-top: 40px;
+	}
+
+	.col-1,
+	.col-2 {
+		max-width: 100%;
 	}
 }
 
@@ -247,7 +285,7 @@ a:hover {
 	body {
     color: #000;
     background: #fff;
-  }
+    }
 
 	h2 {
 		font-size: 1em;
@@ -261,19 +299,17 @@ a:hover {
 		width: 230px;
 	}
 
-	.storage {
-		width: 100%;
-  	position: fixed;
-  	bottom: 85px;
-		left: 0;
-		right: 0;
+	.energy,
+	.storage,
+	.allergens {
+		width: 80%;
 	}
 
 	.main-footer {
 		width: 100%;
-  	position: fixed;
-  	bottom: 10px;
-  	left: 0px;
+  		position: fixed;
+  		bottom: 10px;
+  		left: 0px;
 		right: 0px;
 	}
 
