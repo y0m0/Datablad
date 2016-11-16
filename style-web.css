@@ -173,6 +173,14 @@ table td {
 	max-width: 60%;
 }
 
+.product-picture {
+	width: 40%;
+}
+
+.product-details {
+	width: 100%;
+}
+
 .energy,
 .storage {
 	max-width: 100%;
@@ -279,6 +287,40 @@ a:hover {
 	.col-2 {
 		max-width: 100%;
 	}
+}
+
+@media screen and (max-width: 210mm) {
+	body {
+    color: #000;
+    background: #fff;
+    }
+
+	h2 {
+		font-size: 1em;
+	}
+
+	p, li {
+		font-size: 0.8em;
+	}
+
+	.product-picture img {
+		width: 230px;
+	}
+
+	.energy,
+	.storage,
+	.allergens {
+		width: 80%;
+	}
+
+	.main-footer {
+		width: 100%;
+  		position: fixed;
+  		bottom: 10px;
+  		left: 0px;
+		right: 0px;
+	}
+
 }
 
 @media print and (max-width: 210mm) {
