@@ -5,12 +5,12 @@
 
 import re
 import codecs
-from weasyprint import HTML
+# from weasyprint import HTML
 import pdfkit
 from lxml import objectify
 from collections import OrderedDict
 from yattag import Doc, indent
-import qt_pdf
+# import qt_pdf
 
 
 def get_products(file_path):
@@ -150,9 +150,9 @@ def make_html(prod_dict):
 
             with codecs.open(prodcode + ' - ' + prod.desc.text + '.html', 'w', 'utf-8') as file:
                 file.write(indent(doc.getvalue()))
-            file = prodcode + ' - ' + prod.desc.text
-            #qt_pdf.print_pdf('file:///home/daniele/Git/Datablad/' + file + '.html', file + '.pdf')
-            pdfkit.from_file(prodcode + ' - ' + prod.desc.text + '.html', prodcode + ' - ' + prod.desc.text + '.pdf')
+            location = prodcode + ' - ' + prod.desc.text
+            #qt_pdf.print_pdf(location + '.html', location + '.pdf')
+            pdfkit.from_file(location + '.html', location + '.pdf')
             #HTML(prodcode + ' - ' + prod.desc.text + '.html').write_pdf(prodcode + ' - ' + prod.desc.text + '.pdf')
 
         except:

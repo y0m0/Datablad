@@ -4,6 +4,7 @@ body {
 	margin: auto;
 	font-family: Helvetica;
 	font-size: 1em;
+	line-height: 1.4;
 	color: #000;
     background: #fff;
 }
@@ -189,7 +190,7 @@ table td {
 
 .energy,
 .storage {
-	width: 70%;
+	width: 80%;
 }
 
 .allergens {
@@ -211,7 +212,7 @@ table td {
 .col-2 {
 	max-width: 50%;
 	width: 100%;
-	padding-bottom: 230px;
+/*	padding-bottom: 20px;*/
 }
 
 
