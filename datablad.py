@@ -5,12 +5,10 @@
 
 import re
 import codecs
-# from weasyprint import HTML
 import pdfkit
 from lxml import objectify
 from collections import OrderedDict
 from yattag import Doc, indent
-# import qt_pdf
 
 
 def get_products(file_path):
@@ -24,6 +22,15 @@ def get_products(file_path):
 
 
 def make_html(prod_dict):
+    options = {
+        'page-size': 'A4',
+        'margin-top': '0.2in',
+        'margin-right': '0.2in',
+        'margin-bottom': '0.2in',
+        'margin-left': '0.2in',
+        'encoding': "UTF-8"
+    }
+
     for prodcode, prod in prod_dict.items():
 
         doc, tag, text = Doc().tagtext()
@@ -33,7 +40,7 @@ def make_html(prod_dict):
 
                 with tag('head'):
                     doc.asis('<meta charset="UTF-8" />')
-                    doc.asis('<link rel="stylesheet" type="text/css" href="style-qt.css">')
+                    doc.asis('<link rel="stylesheet" type="text/css" href="style-pdf.css">')
                     doc.asis('<meta name="viewport" content="width=device-width">')
                     with tag('title'):
                         text(prod.prodid.text)
@@ -45,7 +52,7 @@ def make_html(prod_dict):
                             text(prod.desc.text)
 
                     with tag('div', klass='content'):
-                        with tag('div', klass='primary-content group'):
+                        with tag('div', klass='primary-content clearfix'):
 
                             with tag('div', klass='product-picture'):
                                 doc.stag('img',
@@ -71,7 +78,7 @@ def make_html(prod_dict):
                                     with tag('p', klass='field'):
                                         text(prod.prodnote.text)
 
-                        with tag('div', klass='secondary-content'):
+                        with tag('div', klass='secondary-content clearfix'):
                             with tag('div', klass='col-1'):
                                 with tag('div', klass='energy'):
                                     with tag('table'):
@@ -151,9 +158,7 @@ def make_html(prod_dict):
             with codecs.open(prodcode + ' - ' + prod.desc.text + '.html', 'w', 'utf-8') as file:
                 file.write(indent(doc.getvalue()))
             location = prodcode + ' - ' + prod.desc.text
-            #qt_pdf.print_pdf(location + '.html', location + '.pdf')
-            pdfkit.from_file(location + '.html', location + '.pdf')
-            #HTML(prodcode + ' - ' + prod.desc.text + '.html').write_pdf(prodcode + ' - ' + prod.desc.text + '.pdf')
+            pdfkit.from_file(location + '.html', location + '.pdf', options=options)
 
         except:
             incomplete.write(prod.prodid.text + '\n')
