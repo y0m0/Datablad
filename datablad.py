@@ -44,6 +44,7 @@ def make_html(prod_dict):
                 doc.asis('<meta name="viewport" content="width=device-width">')
                 with tag('title'):
                     text(prod.prodid.text)
+                    print(prod.prodid.text)
 
             with tag('body', klass='main'):
                 with tag('header', klass='main-header'):
@@ -76,8 +77,10 @@ def make_html(prod_dict):
                                 with tag('h2'):
                                     text('Ingredienser')
                                 with tag('p', klass='field'):
-                                    print(prod.prodnote.text + '\n')
-                                    text(prod.prodnote.text)
+                                    if hasattr(prod, 'prodnote'):
+                                        text(prod.prodnote.text)
+                                    else:
+                                        text('no data')
 
                     with tag('div', klass='secondary-content clearfix'):
                         with tag('div', klass='col-1'):
@@ -87,16 +90,28 @@ def make_html(prod_dict):
                                         with tag('tr'):
                                             with tag('th', colspan='2'):
                                                 text('Næringsinnehold Pr. 100 gram.')
-                                    with tag('tbody'):
-                                        for lines in re.split('\n', prod.technote.text):
-                                            line = lines.lstrip()
-                                            if line != "":
-                                                with tag('tr'):
-                                                    value = re.split('    ', line)
-                                                    with tag('td'):
-                                                        text(value[0])
-                                                    with tag('td'):
-                                                        text(value[1])
+
+                                    if hasattr(prod, 'technote'):
+                                        with tag('tbody'):
+                                            for lines in re.split('\n', prod.technote.text):
+                                                line = lines.rstrip()
+                                                print(line)
+                                                if line != "":
+                                                    with tag('tr'):
+                                                        value = re.split('    ', line)
+                                                        with tag('td'):
+                                                            text(value[0])
+                                                        if len(value) >= 2:
+                                                            with tag('td'):
+                                                                text(value[1])
+                                                        else:
+                                                            with tag('td'):
+                                                                text(' ')
+                                    else:
+                                        with tag('tbody'):
+                                            with tag('tr'):
+                                                with tag('td')
+                                                    text('no data')
 
                             with tag('div', klass='storage'):
                                 with tag('table'):
@@ -104,15 +119,33 @@ def make_html(prod_dict):
                                         with tag('tr'):
                                             with tag('th', colspan='2'):
                                                 text('Oppbevaring')
+
                                     with tag('tbody'):
-                                        for lines in re.split('\n', prod.annenote.text):
-                                            line = lines.lstrip()
+                                        if hasattr(prod, 'annenote'):
+                                            for lines in re.split('\n', prod.annenote.text):
+                                                line = lines.lstrip()
+                                                with tag('tr'):
+                                                    value = re.split('    ', line)
+                                                    with tag('td'):
+                                                        text(value[0])
+                                                    with tag('td'):
+                                                        text(value[1])
+                                        else:
                                             with tag('tr'):
-                                                value = re.split('    ', line)
                                                 with tag('td'):
-                                                    text(value[0])
+                                                    text('Temperatur, min.')
                                                 with tag('td'):
-                                                    text(value[1])
+                                                    text(' ? ')
+                                            with tag('tr'):
+                                                with tag('td'):
+                                                    text('Temperatur, max.')
+                                                with tag('td'):
+                                                    text(' ? ')
+                                            with tag('tr'):
+                                                with tag('td'):
+                                                    text('Holdbarhet, total')
+                                                with tag('td'):
+                                                   text(' ? ')
 
                         with tag('div', klass='col-2'):
                             with tag('div', klass='allergens'):
@@ -136,12 +169,13 @@ def make_html(prod_dict):
                                             with tag('th', colspan='2'):
                                                 text('Allergener')
                                     with tag('tbody'):
-                                        for word in re.split('[.,() ]+', prod.prodnote.text):
-                                            if word.isupper() and word.isalpha() and len(word) > 2:
-                                                if word.lower() in allergens:
-                                                    allergens[word.lower()] = 'ja'
+                                        if hasattr(prod, 'prodnote'):
+                                            for word in re.split('[.,() ]+', prod.prodnote.text):
+                                                if word.isupper() and word.isalpha() and len(word) > 2:
+                                                    if word.lower() in allergens:
+                                                        allergens[word.lower()] = 'ja'
                                         if hasattr(prod, 'supportnote'):
-                                            for word in re.split('[.,() ]+', prod.supportnote.txt):
+                                            for word in re.split('[.,() ]+', prod.supportnote.text):
                                                 if word.isupper() and word.lower() in allergens:
                                                     allergens[word.lower()] = 'kan'
                                         for key, value in allergens.items():
@@ -162,8 +196,8 @@ def make_html(prod_dict):
 
         with codecs.open(prodcode + ' - ' + prod.desc.text + '.html', 'w', 'utf-8') as file:
             file.write(indent(doc.getvalue()))
-    location = prodcode + ' - ' + prod.desc.text
-    pdfkit.from_file(location + '.html', location + '.pdf', options=options)
+        location = prodcode + ' - ' + prod.desc.text
+        pdfkit.from_file(location + '.html', location + '.pdf', options=options)
 
  #       except:
  #           incomplete.write(prod.prodid.text + '\n')
