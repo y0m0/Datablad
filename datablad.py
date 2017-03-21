@@ -110,7 +110,7 @@ def make_html(prod_dict):
                                     else:
                                         with tag('tbody'):
                                             with tag('tr'):
-                                                with tag('td')
+                                                with tag('td'):
                                                     text('no data')
 
                             with tag('div', klass='storage'):
@@ -124,12 +124,13 @@ def make_html(prod_dict):
                                         if hasattr(prod, 'annenote'):
                                             for lines in re.split('\n', prod.annenote.text):
                                                 line = lines.lstrip()
-                                                with tag('tr'):
-                                                    value = re.split('    ', line)
-                                                    with tag('td'):
-                                                        text(value[0])
-                                                    with tag('td'):
-                                                        text(value[1])
+                                                if line != "":
+                                                    with tag('tr'):
+                                                        value = re.split('    ', line)
+                                                        with tag('td'):
+                                                            text(value[0])
+                                                        with tag('td'):
+                                                            text(value[1])
                                         else:
                                             with tag('tr'):
                                                 with tag('td'):
@@ -199,9 +200,9 @@ def make_html(prod_dict):
         location = prodcode + ' - ' + prod.desc.text
         pdfkit.from_file(location + '.html', location + '.pdf', options=options)
 
- #       except:
- #           incomplete.write(prod.prodid.text + '\n')
- #           continue
+#        except:
+#            incomplete.write(prod.prodid.text + '\n')
+#            continue
 
 
 def select_products(prod_dict, selection=None):
