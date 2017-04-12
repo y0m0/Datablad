@@ -129,8 +129,12 @@ def make_html(prod_dict):
                                                         value = re.split('    ', line)
                                                         with tag('td'):
                                                             text(value[0])
-                                                        with tag('td'):
-                                                            text(value[1])
+                                                        if len(value) >= 2:
+                                                            with tag('td'):
+                                                                text(value[1])
+                                                        else:
+                                                            with tag('td'):
+                                                                text(' ')
                                         else:
                                             with tag('tr'):
                                                 with tag('td'):
@@ -215,6 +219,9 @@ def select_products(prod_dict, selection=None):
 incomplete = open('incomplete.txt', 'w+')
 xmlfile = input('Select a Catalog File: ')
 selected_products = input('Select a list of Products: ')
-with open(selected_products, 'r') as f:
-    products = [x.rstrip('\n') for x in f.readlines()]
+if selected_products != "":
+    with open(selected_products, 'r') as f:
+        products = [x.rstrip('\n') for x in f.readlines()]
     make_html(select_products(get_products(xmlfile), products))
+else:
+    make_html(get_products(xmlfile))
